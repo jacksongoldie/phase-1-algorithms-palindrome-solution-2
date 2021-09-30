@@ -1,9 +1,24 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  debugger;
+  for (let i =0; i < word.length/2; i++){
+    let j = word.length -i - 1;
+    if(word[i] !== word[(j)]){
+      return false;
+    }
+  }
+  return true;
 }
 
+
+/* abba
+a a
+b b
+ */
+
+
 /* 
-  Add your pseudocode here
+  compare first letter to last letter, moving in until middle letter
+
 */
 
 /*
